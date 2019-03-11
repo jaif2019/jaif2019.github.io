@@ -71,21 +71,21 @@
 <td></td>
 <td></td>
 <td></td>
-<td>+ <a href="#maurinne">Philippe Maurinne (LIRMM)</a></td>
+<td>+ <a href="#maurine">Philippe Maurine (LIRMM)</a></td>
 </tr>
 <tr class="odd">
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>+ <a href="#colombier">Brice Colombier (CEA)</a></td>
+<td>+ <a href="#colombier">Brice Colombier (Univ. Saint-Étienne)</a></td>
 </tr>
 <tr class="even">
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>+ <a href="#trouchkine">Ronan Lashermes (INRIA) ou Thomas Trouchkine (ANSSI)</a></td>
+<td>+ <a href="#lashermes">Ronan Lashermes (INRIA)</a></td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -244,37 +244,41 @@
 </tbody>
 </table>
 <h2 id="présentations">Présentations</h2>
-<h3 id="vetillard">Fault attacks: What practical exploits on IoT?</h3>
-<p><em>Éric Vétillard (NXP)</em></p>
+<h3 id="maurine">Injection de fautes par médium EM : modèle et implications</h3>
+<p><em>Philippe Maurine (LIRMM)</em></p>
 <p>Résumé à venir.</p>
-<h3 id="maurinne">Injection EM (titre à préciser)</h3>
-<p><em>Philippe Maurinne (LIRMM)</em></p>
-<p>Résumé à venir.</p>
-<h3 id="feliot">Techniques d’analyse statique pour détecter des vulnérabilités sécuritaires lors d’une revue de code</h3>
-<p><em>David Féliot (CEA Grenoble)</em></p>
-<p>Résumé: L’évaluation de la résistance aux attaques d’un produit de type carte à puce comprend une revue de code du logiciel embarqué. L’objectif de cette revue est de détecter dans le code source des vulnérabilités qui peuvent être exploitées par un attaquant pour forcer ou contourner des fonctions de sécurité, par exemple une fonction de contrôle d’accès. L’exposé présentera d’une part les spécificités et les contraintes liées à l’activité d’évaluation sécuritaire, et d’autre part l’apport des techniques d’analyse statique pour augmenter la fiabilité et l’efficacité de la revue de code.</p>
 <h3 id="colombier">On-the-fly laser-induced corruption of the firmware stored into the flash memory of a 32-bit microcontroller</h3>
 <p><em>Brice Colombier (CEA)</em>, <em>Alexandre Menu (EMSE)</em>, <em>Jean-Max Dutertre (EMSE)</em>, <em>Pierre-Alain Moëllic (CEA)</em>, <em>Jean-Baptiste Rigaud (EMSE)</em>, <em>Jean-Luc Danger (Telecom ParisTech)</em></p>
-<p>Résumé à venir.</p>
-<h3 id="proy">Sécurisation automatisée des boucles à la compilation</h3>
-<p><em>Julien Proy (INVIA)</em></p>
-<p>Résumé à venir.</p>
-<h3 id="deferriere">Compilation de contre-mesures</h3>
-<p><em>François de Ferrière (STMicroelectronics Grenoble)</em></p>
-<h3 id="brejon">Analyse de robustesse de codes binaires</h3>
-<p><em>Jean-Baptiste Bréjon (LIP6)</em></p>
+<p>Résumé: L’injection de faute laser est souvent considérée comme la technique d’injection de faute la plus efficace. En effet, elle offre la plus grande précision spatiale, permettant ainsi à l’attaquant d’induire des fautes au niveau bit. Néanmoins, l’expérience acquise lors de l’attaque de cibles 8 bits n’est pas directement transférable à des microcontrôleurs 32 bits complexes, et ces attaques deviennent de plus en plus difficiles. Dans cette présentation, nous montrons que la mémoire Flash est une zone sensible à l’injection de fautes même sur des microcontrôleurs aux architectures avancées. Ces fautes ont lieu pendant la phase de lecture, et la donnée stockée n’est donc pas modifiée. Après une caractérisation des fautes réalisées et du modèle de faute associé, nous donnerons des exemples détaillés de corruption d’instructions au niveau bit et d’attaques sur des codes d’évaluation classiques. Nous proposerons finalement une hypothèse à propos des caractéristiques physiques de la micro-architecture qui permet d’expliquer le modèle de faute observé.</p>
+<h3 id="lashermes">How modern System-on-Chips are vulnerable to fault attacks</h3>
+<p><em>Guillaume Bouffard (ANSSI)</em>, <em>Sébanjila Kevin Bukasa (INRIA)</em>, <em>Mathieu Escouteloup (INRIA)</em>, <em>Ronan Lashermes (INRIA)</em>, <em>Thomas Trouchkine (ANSSI)</em></p>
+<p>Résumé: Electromagnetic fault injection (EMFI) is a well known technique to disturb the behavior of a chip and weaken its security. Yet these attacks are mostly done on simple microcontrollers since the fault effect is relatively simple and understood.</p>
+<p>Unlocking EMFI on modern System-on-Chips (SoCs), the fast and complex chips ubiquitous today, requires to understand the impact of the faults. In this paper we target the BCM2837 SoC, with four Cortex-A53 cores from ARM. We propose an experimental setup and a forensic process to create exploitable faults and assess their impact on the micro-architecture.</p>
+<p>The observed behaviors are radically different to what was previously obtained on microcontrollers. Subsystems (L1 caches, L2 cache, MMU) can be individually targeted leading to new fault models. We highlight the differences in the fault impact with or without an Operation System, therefore showing the importance of the software layers in the exploitation of a fault.</p>
+<p>The complexity and speed of a SoC does not protect them against hardware attackers, quite the contrary.</p>
+<p>We advocate for the design of secure generic cores with a stronger security model to run all security related code (which emcompass all priviledged code).</p>
 <h3 id="beroulle">Analyse de fautes au niveau RTL</h3>
 <p><em>Vincent Béroulle (LCIS Valence)</em></p>
-<p>Résumé à venir.</p>
-<h3 id="trouchkine">Injection de fautes sur SoC (titre à venir)</h3>
-<p><em>Ronan Lashermes (INRIA)</em> ou <em>Thomas Trouchkine (ANSSI)</em></p>
 <p>Résumé à venir.</p>
 <h3 id="savry">IntrinSec: an intrinsically secure RISC V processor</h3>
 <p><em>Olivier Savry (CEA)</em></p>
 <p>Résumé à venir.</p>
+<h3 id="vetillard">Fault attacks: What practical exploits on IoT?</h3>
+<p><em>Éric Vétillard (NXP)</em></p>
+<p>Résumé à venir.</p>
 <h3 id="potet">Projet CLAPs: présentation du projet et résultats préliminaires</h3>
 <p><em>Marie-Laure Potet (VERIMAG)</em></p>
 <p>Résumé à venir.</p>
+<h3 id="deferriere">Compilation de contre-mesures</h3>
+<p><em>François de Ferrière (STMicroelectronics Grenoble)</em></p>
+<h3 id="proy">Sécurisation automatisée des boucles à la compilation</h3>
+<p><em>Julien Proy (INVIA)</em></p>
+<p>Résumé à venir.</p>
+<h3 id="feliot">Techniques d’analyse statique pour détecter des vulnérabilités sécuritaires lors d’une revue de code</h3>
+<p><em>David Féliot (CEA Grenoble)</em></p>
+<p>Résumé: L’évaluation de la résistance aux attaques d’un produit de type carte à puce comprend une revue de code du logiciel embarqué. L’objectif de cette revue est de détecter dans le code source des vulnérabilités qui peuvent être exploitées par un attaquant pour forcer ou contourner des fonctions de sécurité, par exemple une fonction de contrôle d’accès. L’exposé présentera d’une part les spécificités et les contraintes liées à l’activité d’évaluation sécuritaire, et d’autre part l’apport des techniques d’analyse statique pour augmenter la fiabilité et l’efficacité de la revue de code.</p>
+<h3 id="brejon">Analyse de robustesse de codes binaires</h3>
+<p><em>Jean-Baptiste Bréjon (LIP6)</em></p>
     </div> <!-- /content -->
 </div> <!-- /main -->
 
@@ -290,7 +294,7 @@
         Site generated by <a href="http://jaspervdj.be/hakyll">Hakyll</a>
         and <a href="http://johnmacfarlane.net/pandoc">pandoc</a>
         −
-         <a href="https://github.com/jaif2019/jaif2019.github.io/commits/master">Page last modified Fri, 8 Mar 2019 14:55:46 +0100</a> 
+         <a href="https://github.com/jaif2019/jaif2019.github.io/commits/master">Page last modified Mon, 11 Mar 2019 10:15:38 +0100</a> 
     </div>
 </footer>
 
