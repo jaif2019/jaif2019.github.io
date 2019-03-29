@@ -246,7 +246,7 @@
 <h2 id="présentations">Présentations</h2>
 <h3 id="maurine">Injection de fautes par médium EM : modèle et implications</h3>
 <p><em>Philippe Maurine (LIRMM)</em></p>
-<p>Résumé à venir.</p>
+<p>La première publication traitant d’attaques par faute(s) conduites par médium électromagnétique a été publiée en 2002. Plus de 15 ans après, le mécanisme par lequel ces fautes apparaissent n’est toujours pas clairement établi. Dans ce contexte, cette présentation s’attachera à expliquer finement l’apparition des fautes et ce en partant des principes de l’induction électromagnétique jusqu’au tréfonds des circuits intégrés. Enfin, les enseignements de ce modèle seront tirés tant pour établir des pistes de contremesures que des moyens d’améliorations des plateformes d’injection EM.</p>
 <h3 id="colombier">On-the-fly laser-induced corruption of the firmware stored into the flash memory of a 32-bit microcontroller</h3>
 <p><em>Brice Colombier (CEA)</em>, <em>Alexandre Menu (EMSE)</em>, <em>Jean-Max Dutertre (EMSE)</em>, <em>Pierre-Alain Moëllic (CEA)</em>, <em>Jean-Baptiste Rigaud (EMSE)</em>, <em>Jean-Luc Danger (Telecom ParisTech)</em></p>
 <p>L’injection de faute laser est souvent considérée comme la technique d’injection de faute la plus efficace. En effet, elle offre la plus grande précision spatiale, permettant ainsi à l’attaquant d’induire des fautes au niveau bit. Néanmoins, l’expérience acquise lors de l’attaque de cibles 8 bits n’est pas directement transférable à des microcontrôleurs 32 bits complexes, et ces attaques deviennent de plus en plus difficiles. Dans cette présentation, nous montrons que la mémoire Flash est une zone sensible à l’injection de fautes même sur des microcontrôleurs aux architectures avancées. Ces fautes ont lieu pendant la phase de lecture, et la donnée stockée n’est donc pas modifiée. Après une caractérisation des fautes réalisées et du modèle de faute associé, nous donnerons des exemples détaillés de corruption d’instructions au niveau bit et d’attaques sur des codes d’évaluation classiques. Nous proposerons finalement une hypothèse à propos des caractéristiques physiques de la micro-architecture qui permet d’expliquer le modèle de faute observé.</p>
@@ -262,7 +262,7 @@
 <p>Résumé à venir.</p>
 <h3 id="savry">IntrinSec: an intrinsically secure RISC V processor</h3>
 <p><em>Olivier Savry (CEA)</em></p>
-<p>Résumé à venir.</p>
+<p>Dans le cadre du projet Nanotrust soutenu par l’IRT Nanoelec nous développons une gamme de processeurs intrinsèquement sécurisés pour les CPS. Ces processeurs sont capables d’exécuter du code chiffré où chaque instruction est également associée à un MAC qui permet une vérification de son intégrité au runtime. Cette structure permet également la mise en place aisée d’un CFI intrinsèque avec un chaînage cryptographique des Basic Blocks et de protection contre les stack overflows. Toute déviation du graphe de flot de contrôle est ainsi détecter par une erreur à la vérification des MAC.</p>
 <h3 id="vetillard">Fault attacks: What practical exploits on IoT?</h3>
 <p><em>Éric Vétillard (NXP)</em></p>
 <p>Résumé à venir.</p>
@@ -278,13 +278,15 @@
 <p>Nous présentons dans cet exposé ces techniques et transformations que nous avons implémentées. Nous montrons comment elles contribuent au renforcement de la protection des applications. Nous détaillons également comment ces techniques peuvent être appliquées localement à certaines régions critiques d’une application afin de satisfaire les contraintes industrielles de taille et de performances de ces applications.</p>
 <h3 id="proy">Sécurisation automatisée des boucles à la compilation</h3>
 <p><em>Julien Proy (INVIA)</em></p>
-<p>Résumé à venir.</p>
+<p>La sécurisation des systèmes embarqués est un enjeu majeur dans l’industrie. Le déploiement de contre-mesures logicielles est encore largement réalisé de façon manuelle, induisant des coûts et temps de développement importants. Afin de réduire ces coûts, les industriels sont à la recherche d’approches automatisées, nécessitant des schémas de protection génériques.</p>
+<p>Nous présentons dans cet exposé une contre-mesure dédiée à la sécurisation des boucles applicable automatiquement à la compilation. Une implémentation dans le compilateur LLVM ainsi qu’une étude des interactions avec les optimisations du compilateur sont également détaillées. Enfin, nous montrons les résultats associés provenant de simulations et de campagnes d’attaques physiques.</p>
 <h3 id="feliot">Techniques d’analyse statique pour détecter des vulnérabilités sécuritaires lors d’une revue de code</h3>
 <p><em>David Féliot (CEA Grenoble)</em></p>
 <p>L’évaluation de la résistance aux attaques d’un produit de type carte à puce comprend une revue de code du logiciel embarqué. L’objectif de cette revue est de détecter dans le code source des vulnérabilités qui peuvent être exploitées par un attaquant pour forcer ou contourner des fonctions de sécurité, par exemple une fonction de contrôle d’accès. L’exposé présentera d’une part les spécificités et les contraintes liées à l’activité d’évaluation sécuritaire, et d’autre part l’apport des techniques d’analyse statique pour augmenter la fiabilité et l’efficacité de la revue de code.</p>
-<h3 id="brejon">Analyse de robustesse de codes binaires</h3>
+<h3 id="brejon">Évaluation sécuritaire de code binaire soumis à des attaques en faute</h3>
 <p><em>Jean-Baptiste Bréjon (LIP6)</em></p>
-<p>Résumé à venir.</p>
+<p>Les attaques en fautes constituent une menace sérieuse pour les applications embarquées. Pour s’en prémunir, le code peut être renforcé par l’insertion de protections visant à détecter ou tolérer des attaques en faute et la robustesse obtenue doit être évaluée. Dans cet exposé, nous présenterons une approche, implémentée dans le framework RobustB, combinant des analyses statiques et dynamiques de code avec de la vérification formelle et un ensemble de métriques pour évaluer la robustesse d’un code binaire soumis à des attaques en faute. Notre approche modélise la recherche de vulnérabilités par des problèmes d’équivalence-checking résolus par un SMT sovler.</p>
+<p>RobustB permet d’analyser la robustesse de code après compilation, et à l’aide des métriques, il permet de comparer des codes intégrant différentes protections et/ou compilés avec différents compilateurs et/ou différents niveaux d’optimisation. En particulier, nous illustrerons l’apport de notre approche et de ses métriques à l’analyse de vulnérabilités, l’analyse des effets des optimisations de code de compilateurs ainsi qu’à la comparaison de différentes protections combinées ou non sur des codes protégés au niveau du code source.</p>
     </div> <!-- /content -->
 </div> <!-- /main -->
 
@@ -300,7 +302,7 @@
         Site generated by <a href="http://jaspervdj.be/hakyll">Hakyll</a>
         and <a href="http://johnmacfarlane.net/pandoc">pandoc</a>
         −
-         <a href="https://github.com/jaif2019/jaif2019.github.io/commits/master">Page last modified Wed, 27 Mar 2019 15:27:24 +0100</a> 
+         <a href="https://github.com/jaif2019/jaif2019.github.io/commits/master">Page last modified Fri, 29 Mar 2019 15:26:05 +0100</a> 
     </div>
 </footer>
 
